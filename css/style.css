@@ -1,19 +1,43 @@
-body {
-  text-align: center;
+/* ALL YOUR CODE GOES BELOW THIS LINE */
+/* ================================== */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 150px 50px 400px 150px;
+  /* create 4 rows:  
+  - 150px 
+  - 50px 
+  - 400px
+  - 150px  */
+  /* ⬇️⬇️⬇️ STYLE THE GRID CONTAINER HERE ⬇️⬇️⬇️ */
+
+  /* ⬆️⬆️⬆️ STYLE THE GRID CONTAINER HERE ⬆️⬆️⬆️ */
+}
+
+/* 🚨🚫🙅  START OF THE NO TOUCHING ZONE 🙅🚫🚨 */
+
+.container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
   font-family: sans-serif;
 }
-
-#container {
-  margin: 0 auto;
-  width: 90%;
-  height: 1000px;
-  border: 4px solid #000;
+.header {
+  background-color: #f06292;
+}
+.navbar {
+  background-color: #ba68c8;
 }
 
-#container {
-  display: grid;
+.main {
+  background-color: #9575cd;
 }
 
-.box {
-  font-size: 1.5rem;
+.footer {
+  background-color: #7986cb;
 }
+
+/* 🚨🚫🙅  END OF THE NO TOUCHING ZONE 🙅🚫🚨 */
