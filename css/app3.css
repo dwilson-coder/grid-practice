@@ -1,32 +1,26 @@
 /* ALL YOUR CODE GOES BELOW THIS LINE */
 /* ================================== */
-
 #container {
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
-  min-height: 300px;
+  width: 500px;
+  height: 500px;
   border: 1px solid black;
   /* 
-  Create a layout with: 
-  - 3 equally sized columns 
-  - 2 rows.  The first should be twice as large as the second. */
+  Using repeat and fractional units, create a layout with: 
+  - 5 equally sized columns
+  - 4 equally sized rows */
 
   /* ⬇️⬇️⬇️ STYLE THE GRID CONTAINER HERE ⬇️⬇️⬇️ */
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 2fr;
-  /* grid-template-rows: 2fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   /* ⬆️⬆️⬆️ STYLE THE GRID CONTAINER HERE ⬆️⬆️⬆️ */
 }
 
 /* 🚨🚫🙅  START OF THE NO TOUCHING ZONE 🙅🚫🚨 */
-body {
-  height: 100vh;
-}
-.box {
-  border: 2px solid black;
-  font-size: 2em;
-  padding: 0.5em;
-  box-sizing: border-box;
+
+div {
+  border: 1px solid black;
+  min-height: 20px;
 }
 /* 🚨🚫🙅  END OF THE NO TOUCHING ZONE 🙅🚫🚨 */
