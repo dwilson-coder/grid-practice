@@ -1,0 +1,43 @@
+body {
+}
+
+.header {
+  background-color: #ba68cb;
+  height: 150px;
+  grid-area: header;
+}
+.content {
+  background-color: #9575cd;
+  height: 400px;
+  grid-area: content;
+}
+.navbar {
+  background-color: #7986cb;
+  grid-area: nav;
+}
+.sidebar {
+  background-color: #64b5f6;
+  min-height: 100px;
+  grid-area: sidebar;
+}
+.ad {
+  background-color: #4dd0e1;
+  min-height: 100px;
+  grid-area: ad;
+}
+.footer {
+  height: 150px;
+  background-color: #4db6ac;
+  grid-area: footer;
+}
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
